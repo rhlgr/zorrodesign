@@ -1,0 +1,869 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+   min-width: 100vw;
+   min-height: 100vh;
+   overflow-x: hidden;
+   
+
+}
+.main{
+    width: 100vw;
+  min-height: 100vh;
+
+}
+.box1{
+    width: 100%;
+    height: 200vh;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+}
+marquee{
+    margin-top: 5vmax;
+    position: absolute;
+    width: 130vw;
+    top: 40%;
+    transform: perspective(700px) rotateY(30deg) ;
+}
+.b1imgs{
+
+        width: 190vw;
+        height: 23vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 48%;
+        background-color: black;
+        transform: perspective(2000px) rotateY(65deg);
+    }
+    
+    .b1imgs::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .b1imgs >img{
+        width: 100vw;
+        height: 20vh;
+        margin-right: 15px;
+        display: inline-block;
+        animation: move 20s linear infinite both;
+    
+    }
+    
+    @keyframes move {
+        0%{
+            transform: translateX(0%);
+        }
+        100%{
+            transform: translateX(-360%);
+        }
+    }
+
+
+.box1>h1{
+    color: white;
+    font: 500 6vmax "roboto";  
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    line-height: 100px;
+}
+.box1>h2{
+    color: white;
+    font: 500 5vmax "merienda";  
+    position: absolute;
+    top: 23%;
+    left: 10%;
+    letter-spacing: -4px;
+}
+.box1>button{
+    color: black;
+    font: 600 1vmax "poppins";  
+    position: absolute;
+    top: 32%;
+    left: 10%;
+    background-color: white;
+    padding:8px 44px ;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.nav{
+    width: 100%;
+    height: 12vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:12px;
+    background-color: black;
+    z-index: 99;
+}
+.part2{
+    width: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-right: 20px;
+}
+.nav>img{
+    cursor: pointer;
+}
+.part2>h1{
+    color: white;
+    font: 500 1.4vmax "roboto";
+    cursor: pointer;
+}
+.part2>i{
+    color: white;
+    font: 900 2vmax "roboto";
+    cursor: pointer;
+}
+.b1middle{
+    position: absolute;
+    top: 73%;
+    margin: 0 150px;
+}
+.b1middle>h1{
+    color: white;
+    font: 500 2.5vmax "poppins";
+    letter-spacing: -1px;
+    line-height: 40px;  
+}
+.b1last{
+    position: absolute;
+    top: 83%;
+    margin-left:730px;
+    margin-right: 140px; 
+    height: 30vh;
+}
+.b1last >h1{
+    color: white;
+    font: 300 1.3vmax "roboto";
+    line-height: 30px;
+
+}
+.b1last>button{
+    color: black;
+    font: 500 1vmax "poppins";  
+    background-color: white;
+    padding:10px 44px ;
+    border-radius: 25px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.box2{
+    width: 100%;
+    height: 350vh;
+    background-color: black;
+    background-attachment: fixed;
+}
+.b2top,.b2last{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.b2top1,.b2last1{
+    display: flex;
+    align-items: center;
+}
+.b2top1>h1{
+    font: 700 4vmax "poppins";  
+    color: white;   
+}
+.b2top1>h2{
+    font: 500 3.8vmax "merienda";  
+    letter-spacing: -5px;
+    margin-left: 10px;
+    color: white; 
+}
+.b2top>h2{
+    margin-top: 15px;
+    font: 300 1.3vmax "poppins"; 
+    letter-spacing: -1px;
+    text-align: center;
+    width: 35%;
+    line-height: 25px;
+    color: white; 
+}
+.b2top>button,.b2last>button{
+    color: black;
+    font: 500 1vmax "poppins";  
+    background-color: white;
+    padding:10px 44px ;
+    border-radius: 25px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.cards{
+    height: 250vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.card1,.card2,.card3,.card4,.card5,.card6{
+    width: 33%;
+    height: 125vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   border: .1px solid rgba(128, 128, 128, 0.185);
+   padding: 20px;
+   cursor: pointer;
+   position: relative;
+   z-index: 1;
+   overflow: hidden;
+}
+.card1::before,.card2::before,.card3::before,.card4::before,.card5::before,.card6::before{
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    z-index: -1;
+    transform: translateY(-100%);
+    transition: .5s all ease-in-out;
+}
+.card1:hover::before,.card2:hover::before,.card3:hover::before,.card4:hover::before,.card5:hover::before,.card6:hover::before{
+    transform: translateY(-45%);
+}
+.card1::after,.card2::after,.card3::after,.card4::after,.card5::after,.card6::after{
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    z-index: -1;
+    transform: translateY(100%);
+    transition: .5s all ease-in-out;
+}
+.card1:hover::after,.card2:hover::after,.card3:hover::after,.card4:hover::after,.card5:hover::after,.card6:hover::after{
+    transform: translateY(51%);
+}
+.card1>i,.card2>i,.card3>i,.card4>i,.card5>i,.card6>i{
+ border: .1px solid white;
+ padding: 10px;
+ border-radius: 50%;
+ margin-top: 10px;
+ color: white;
+ cursor: pointer;
+ z-index: 99;
+}
+.card1:hover i,.card2:hover i,.card3:hover i,.card4:hover i,.card5:hover  i,.card6:hover i{
+    border: .1px solid black;
+    color: black;
+}
+.content1,.content2,.content3,.content4,.content5,.content6{
+    width: 88%;
+}
+.content1>h1,.content2>h1,.content3>h1,.content4>h1,.content5>h1,.content6>h1{
+    font: 500 2.3vmax "roboto";  
+    letter-spacing: -1px;
+    color: white; 
+    z-index: 99;
+}
+.content1>p,.content2>p,.content3>p,.content4>p,.content5>p,.content6>p{
+    font: 400 1.3vmax "roboto";  
+    letter-spacing: -1px;
+    width: 80%;
+    color: white; 
+    z-index: 99;
+}
+.b2last1>h1{
+    font: 700 6vmax "poppins";   
+    color: white; 
+}
+.b2last1>h2{
+    font: 500 5.8vmax "merienda";  
+    letter-spacing: -5px;
+    margin-left: 10px;
+    color: white; 
+}
+.boxex{
+    width: 100%;
+    height: 400vh;
+    
+}
+.allboxes{
+    position: absolute;
+    width: 100%;
+    height: inherit;
+}
+.box3{
+    width: 100%;
+    height: 80vh;
+    position: sticky;
+    top: 0%;
+    z-index: 111;
+}
+.box4{
+    width: 100%;
+    height: 80vh;
+    position: sticky;
+    top: 9%;
+    z-index: 112;
+}
+.box5{
+    width: 100%;
+    height: 80vh;
+    position: sticky;
+    top: 19%;
+    z-index: 113;
+}
+.box6{
+    width: 100%;
+    height: 90vh; 
+    position: sticky;
+    top: 29%; 
+    z-index: 114;
+}
+.b3top,.b4top,.b5top,.b6top{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-top: .1px solid rgba(128, 128, 128, 0.269);
+   
+}
+/* .b3top>img,.b4top>img,.b5top>img,.b6top>img{
+    width: 100%;
+    height: 100%;
+} */
+ .b3bottom{
+    height: 70vh;
+    background-image: url(Zorro\ Design_files/bottels.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: sticky !important;
+    top: 0;
+    z-index: 111;
+}
+.b4bottom{
+    height: 70vh;
+    background-image: url(Zorro\ Design_files/party.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: sticky !important;
+    top: 0;
+    z-index: 111;
+}
+.b5bottom{
+    height: 70vh;
+    background-image: url(olipop.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: sticky !important;
+    top: 0;
+    z-index: 111;
+}
+.b6bottom{
+    height: 90vh;
+    background-image: url(gemini1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: sticky !important;
+    top: 0;
+    z-index: 111;
+}
+.b3top>h1,.b4top>h1,.b5top>h1,.b6top>h1{
+    font: 700 1.8vmax "poppins";   
+    color: white; 
+    margin-left: 10px;
+}
+.b3top>h2,.b4top>h2,.b5top>h2,.b6top>h2{
+    font: 100 1.5vmax "roboto";   
+    color: white; 
+    margin-left: 10px;
+}
+.b3top>h3,.b4top>h3,.b5top>h3,.b6top>h3{
+    font: 300 1.5vmax "roboto";   
+    color: white; 
+    margin-left: 10px;
+}
+.b3top>i,.b4top>i,.b5top>i,.b6top>i{
+    border: .1px solid white;
+    padding: 8px;
+    border-radius: 50%;
+    margin-left: 10px;
+    color: white;
+    cursor: pointer;
+    z-index: 99;
+}
+.box7{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    z-index: 115;
+  
+}
+.b7top{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.b7top>h1{
+    font: 500 5vmax "poppins";   
+    color: white; 
+}
+.b7top>h2{
+    font: 500 4.8vmax "merienda";  
+    letter-spacing: -5px;
+    margin-left: 10px;
+    color: white; 
+}
+.b7bottom{
+    height: 60vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.images{
+   margin-left: 35vmax;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.img1,.img2,.img3{
+    width: 60%;
+    height: 50vh;
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+
+}
+.left1{
+    border-radius: 10px;
+    width: 28%;
+    height: 40vh;
+    background-image: url(Zorro\ Design_files/yuno.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 40px;
+}
+.left2{
+    border-radius: 10px;
+    width: 28%;
+    height: 40vh;
+    background-image: url(Zorro\ Design_files/girl2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 40px;
+}
+.left3{
+    border-radius: 10px;
+    width: 28%;
+    height: 40vh;
+    background-image: url(Zorro\ Design_files/girl1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 40px;
+}
+.right1,.right2,.right3{
+    width: 55%;
+}
+.right1>h1,.right2>h1,.right3>h1{
+    font: 500 1.3vmax "poppins";
+    color: white;
+    line-height: 25px;
+    letter-spacing: -1px;
+    margin-top: 90px;
+}
+.right2>h1,.right3>h1{
+    font: 500 1.3vmax "poppins";
+    color: white;
+    line-height: 25px;
+    letter-spacing: -1px;
+    margin-top: 60px;
+}
+.right1>h2,.right2>h2,.right3>h2{
+    font: 500 1.3vmax "poppins";
+    color: white;
+    margin-top: 70px;
+}
+.right1>h3,.right2>h3,.right3>h3{
+    font: 500 1vmax "poppins";
+    color: rgb(163,163, 163);
+    line-height: 25px;
+    letter-spacing: -1px;
+    margin-top: 10px;
+}
+.box8{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+}
+@keyframes scroll {
+0%{
+    transform: translateX(0);
+}
+100%{
+    transform: translateX(calc(100% - 1800px));
+}
+}
+.a,.c{
+    animation-name: scroll;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.b{
+    animation-name: scroll;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.box9{
+    width: 100%;
+    height: 150vh;
+    background-color: black;
+}
+.b9top{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.b9top>h1{
+    font: 500 5vmax "poppins";   
+    color: white; 
+    letter-spacing: -4px;
+}
+.b9top>h2{
+    font: 500 4.8vmax "merienda";  
+    letter-spacing: -5px;
+    margin-left: 10px;
+    color: white; 
+}
+.box9>h3{
+    font: 300 1.3vmax "roboto";   
+    color: white; 
+    text-align: center;
+    width: 22%;
+    height: 20vh;
+    margin: 5vmax 39vmax;
+    line-height: 26px;
+}
+.b9texttop{
+    width: 100%;
+    height: 50vh ;
+    display: flex;
+}
+.b9textbottom{
+    width: 100%;
+    height: 50vh ;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+.b9text1{
+    width: 25%;
+    height: inherit;
+    padding-left: 50px;
+    padding-right: 20px;
+    margin-right: 30px;
+
+}
+.b9text2{
+    width: 27%;
+    height: inherit;
+    padding-left: 50px;
+    padding-right: 5px;
+    margin-right: 30px;
+
+}
+.b9text3,.b9text4{
+    width: 25.5%;
+    height: inherit;
+    padding-left: 50px;
+    padding-right: 5px;
+    margin-right: 30px;
+
+}
+.b9text1>h1,.b9text2>h1,.b9text3>h1,.b9text4>h1{
+    font: 500 6vmax "merienda";  
+    color: white;
+}
+.b9text1>h2,.b9text2>h2,.b9text3>h2,.b9text4>h2{
+    font: 400 2vmax "poppins";  
+    margin-top: -1vmax;
+    color: white;
+}
+.b9text1>p,.b9text2>p,.b9text3>p,.b9text4>p{
+    font: 300 1.3vmax "roboto";  
+    color: white;
+   
+}
+span{
+    font: 500 1.3vmax "roboto";  
+    color: white;  
+}
+.box10{
+    width: 100%;
+    height: 420vh;
+    background-color: black;
+    display: flex;  
+}
+.b10left{
+    width: 40%;
+    height: inherit;
+    
+}
+.b10top{
+    width: 60%;
+    height: inherit; 
+    position: absolute;
+}
+.b10top>h1{
+    font: 500 5vmax "roboto";  
+    margin-top: 4vmax;
+    margin-left: 8vmax;
+    color: white;
+    line-height: 90px;
+    letter-spacing: -3px;
+    position: -webkit-sticky;
+    position: sticky;
+    top:10%;
+
+}
+
+.b10right{
+    width: 60%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.b10one,.b10two,.b10three,.b10four,.b10five,.b10six{
+    width:70% ;
+    height: 60vh;
+    background-color: black;
+    border-radius: 25px;
+    border: .1px solid rgba(128, 128, 128, 0.3);
+    padding: 15px;
+    margin-bottom: 60px;
+}
+.b10one>h1,.b10two>h1,.b10three>h1,.b10four>h1,.b10five>h1,.b10six>h1{
+    font: 400 1.5vmax "roboto";   
+    color: white;
+    margin-top: 1vmax;
+    margin-left: 2vmax;
+}
+.b10one>h2,.b10two>h2,.b10three>h2,.b10four>h2,.b10five>h2,.b10six>h2{
+    font: 400 1.5vmax "roboto";   
+    color: gray;
+    margin-top: .2vmax;
+    margin-left: 2vmax;
+}
+.gemini{
+    width: 100%;
+    height: 40vh;
+    margin-top: 3vmax;
+    border-radius: 25px;
+    border: .1px solid rgba(128, 128, 128, 0.167);
+    background-image: url(Zorro\ Design_files/gemini.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.snack{
+    width: 100%;
+    height: 40vh;
+    margin-top: 3vmax;
+    border-radius: 25px;
+    border: .1px solid rgba(128, 128, 128, 0.167);
+    background-image: url(Zorro\ Design_files/snack.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.bottels{
+    width: 100%;
+    height: 40vh;
+    margin-top: 3vmax;
+    border-radius: 25px;
+    border: .1px solid rgba(128, 128, 128, 0.167);
+    background-image: url(Zorro\ Design_files/bottels.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.party{
+    width: 100%;
+    height: 40vh;
+    margin-top: 3vmax;
+    border-radius: 25px;
+    border: .1px solid rgba(128, 128, 128, 0.167);
+    background-image: url(Zorro\ Design_files/party.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.bodybuilder{
+    width: 100%;
+    height: 40vh;
+    margin-top: 3vmax;
+    border-radius: 25px;
+    border: .1px solid rgba(128, 128, 128, 0.167);
+    background-image: url(Zorro\ Design_files/bodybuider.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.passport{
+    width: 100%;
+    height: 40vh;
+    margin-top: 3vmax;
+    border-radius: 25px;
+    border: .1px solid rgba(128, 128, 128, 0.167);
+    background-image: url(Zorro\ Design_files/passport.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+.box11{
+    width: 100%;
+    height: 220vh;
+    background-color: black;
+}
+.b11a{
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: .1px solid rgba(255, 255, 255, 0.231);
+    border-radius: 50%;
+}
+.b11top{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+.b11top>h1{
+    font: 500 3.8vmax "roboto";   
+    color: white; 
+}
+.b11top>h2{
+    font: 500 3.6vmax "merienda";  
+    letter-spacing: -4px;
+    margin-left: 10px;
+    color: white; 
+}
+.b11a>h2{
+    font: 500 1.8vmax "roboto";   
+    color: white; 
+    margin-top: 20px;
+}
+.btn1>button,.btn2>button,.btn3>button{
+   color: white;
+   background-color: black;
+   border: .1px solid white;
+   border-radius: 25px;
+   padding: 15px 30px;
+   cursor: pointer;
+   margin-left: 10px;
+   margin-top: 30px;
+   font-weight: 600;
+}
+input{
+    margin-top: 30px;
+    background-color: black;
+    border: .1px solid white;
+    border-radius: 25px;
+    padding: 15px 130px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+}
+.inp3{
+    margin-top: 30px;
+    background-color: black;
+    border: .1px solid white;
+    padding: 60px 130px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+}
+.b11a>button{
+    color: white;
+    background-color:rgb(28,107,255);
+    border-radius: 30px;
+    padding: 15px 55px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size: 1.1vmax;
+    font-weight: 600;
+}
+.b11middle{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.b11one,.b11two,.b11three{
+    width: 10%;
+    height: inherit;
+    margin: 0 40px;
+}
+.b11one>h1,.b11two>h1,.b11three>h1{
+font: 400 1.2vmax "roboto";
+color: white;
+margin-top: 13vmax;
+margin-bottom: 20px;
+}
+.b11one>h2,.b11two>h2,.b11three>h2{
+    font: 300 1.2vmax "roboto";
+    color: white;
+    margin-top: 10px;
+}
+.b11last{
+    margin-top: 3vh;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.b11last>h1{
+    font: 500 .8vmax "roboto";   
+    color: gray; 
+    letter-spacing: 3px;
+}
+

@@ -1,0 +1,822 @@
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    /* CSS */
+    
+  }
+  @media (max-width: 600px) {
+.box1{
+        width: 100%;
+        height: 135vh;
+        background-color: rgb(2, 2, 2);
+        overflow: hidden;
+        position: relative;
+}
+marquee{
+        margin-top: 5vmax;
+        position: absolute;
+        width: 130vw;
+        top: 0%;
+        transform: perspective(700px) rotateY(30deg) ;
+}
+.b1imgs{
+    
+            width: 190vw;
+            height: 23vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 42%;
+            background-color: black;
+            transform: perspective(2000px) rotateY(75deg);
+        }
+        
+        .b1imgs::-webkit-scrollbar{
+            display: none;
+        }
+        
+        .b1imgs >img{
+            width: 100vw;
+            height: 20vh;
+            margin-right: 15px;
+            display: inline-block;
+            animation: move 20s linear infinite both;
+        
+        }
+        
+        @keyframes move {
+            0%{
+                transform: translateX(0%);
+            }
+            100%{
+                transform: translateX(-360%);
+            }
+        }
+ 
+        .box1>h1{
+            color: white;
+            font: 500 6vmax "roboto";  
+            position: absolute;
+            top: 12%;
+            left: 10%;
+            line-height: 50px;
+        }
+        .box1>h2{
+            color: white;
+            font: 500 5vmax "merienda";  
+            position: absolute;
+            top: 25%;
+            left: 10%;
+            letter-spacing: -4px;
+        }
+        .box1>button{
+            color: black;
+            font: 600 1.6vmax "poppins";  
+            position: absolute;
+            top: 33%;
+            left: 10%;
+            background-color: white;
+            padding:4px 20px ;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        .nav{
+            width: 100%;
+            height: 12vh;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:12px;
+            background-color: black;
+            z-index: 99;
+        }
+        .part2{
+            width: 22%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding-right: 20px;
+        }
+        .nav>img{
+            cursor: pointer;
+            height: 40px;
+        }
+        .part2>h1{
+            color: white;
+            font: 500 1.4vmax "roboto";
+            cursor: pointer;
+            display: none;
+        }
+        .part2>i{
+            color: white;
+            font: 900 4vmax "roboto";
+            cursor: pointer;
+            margin-left: 10vmax;
+        }
+
+        .b1middle{
+            width: 60%;
+            position: absolute;
+            top: 73%;
+        }
+        .b1middle>h1{
+            color: white;
+            font: 500 3.5vmax "poppins";
+            letter-spacing: -1px;
+            line-height: 28px;  
+            width: 110%;
+            margin-left: -15vmax;
+        }
+       .box1 > .b1last{
+          position: absolute;
+          top: 65%;
+          width: 1vw;
+          left: -50%;
+          
+        }
+        .b1last >h1{
+            color: white;
+            font: 300 3.7vmax "roboto";
+            line-height: 20px;
+             /* margin-left: -80vmax; */
+             display: none;
+        }
+        .b1last>button{
+            color: black;
+            font: 500 2vmax "poppins";  
+            background-color: white;
+            padding:8px 38px ;
+            border-radius: 25px;
+            margin-top: 40vmax;
+            cursor: pointer;
+           margin-left: -70vmax;
+        }
+
+        .box2{
+          width: 100%;
+          height: 140vh;
+          background-color: black;
+          background-attachment: fixed;
+          /* margin-top: -80vmax; */
+      }
+      .b2top{
+          height: 50vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          padding: 20px;
+      }
+      .b2last{
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        margin-top: -10vmax;
+    }
+      .b2top1,.b2last1{
+          display: flex;
+          align-items: center;
+      }
+      .b2top1>h1{
+          font: 700 5vmax "poppins";  
+          color: white;   
+      }
+      .b2top1>h2{
+        font: 500 4.8vmax "merienda";  
+        letter-spacing: -2px;
+        margin-left: 10px;
+        color: white; 
+    }
+    .b2top>h2{
+        margin-top: 15px;
+        font: 300 2.5vmax "roboto"; 
+        text-align: center;
+        letter-spacing: .5px;
+        width: 85%;
+        line-height: 20px;
+        color: white; 
+    }
+    .b2top>button,.b2last>button{
+      color: black;
+      font: 500 2vmax "poppins";  
+      background-color: white;
+      padding:8px 38px ;
+      border-radius: 25px;
+      margin-top: 30px;
+      cursor: pointer;
+  }
+  .cards{
+height: 60vh;
+}
+.card1,.card2,.card3,.card4,.card5,.card6{
+    width: 100%;
+    height: 10vh;
+   border: .1px solid rgba(128, 128, 128, 0.185);
+   padding: 20px;
+   cursor: pointer;
+   position: relative;
+   z-index: 1;
+   margin-top: -10vmax;
+}
+.card1::before,.card2::before,.card3::before,.card4::before,.card5::before,.card6::before{
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  z-index: -1;
+  transform: translateY(-100%);
+  transition: .5s all ease-in-out;
+  display: none;
+}
+.card1:hover::before,.card2:hover::before,.card3:hover::before,.card4:hover::before,.card5:hover::before,.card6:hover::before{
+  transform: translateY(-45%);
+  display: none;
+}
+.card1::after,.card2::after,.card3::after,.card4::after,.card5::after,.card6::after{
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  z-index: -1;
+  transform: translateY(100%);
+  transition: .5s all ease-in-out;
+  display: none;
+}
+.card1:hover::after,.card2:hover::after,.card3:hover::after,.card4:hover::after,.card5:hover::after,.card6:hover::after{
+  transform: translateY(51%);
+  display: none;
+}
+.card1>i,.card2>i,.card3>i,.card4>i,.card5>i,.card6>i{
+border: .1px solid white;
+padding: 4px;
+border-radius: 50%;
+margin-top: 10px;
+color: white;
+cursor: pointer;
+z-index: 99;
+}
+.card1:hover i,.card2:hover i,.card3:hover i,.card4:hover i,.card5:hover  i,.card6:hover i{
+  border: .1px solid black;
+  color: black;   
+  }
+
+  .content1,.content2,.content3,.content4,.content5,.content6{
+    width: 88%;
+}
+.content1>h1,.content2>h1,.content3>h1,.content4>h1,.content5>h1,.content6>h1{
+    font: 300 2.3vmax "roboto";  
+    letter-spacing: -1px;
+    color: white; 
+    z-index: 99;
+}
+.content1>p,.content2>p,.content3>p,.content4>p,.content5>p,.content6>p{
+    font: 200 1.3vmax "roboto";  
+    letter-spacing: 0px;
+    width: 70%;
+    color: white; 
+    z-index: 99;
+    line-height: 12px;
+}
+.boxex{
+  width: 100%;
+  height: 200vh;
+  
+}
+.allboxes{
+  position: absolute;
+  width: 100%;
+  height: inherit;
+}
+.box3{
+  width: 100%;
+  height: 60vh;
+  position: sticky;
+  top: 0%;
+  z-index: 111;
+}
+.box4{
+  width: 100%;
+  height: 60vh;
+  position: sticky;
+  top: 9%;
+  z-index: 112;
+}
+.box5{
+  width: 100%;
+  height: 60vh;
+  position: sticky;
+  top: 15%;
+  z-index: 113;
+}
+.box6{
+  width: 100%;
+  height: 70vh; 
+  position: sticky;
+  top: 29%; 
+  z-index: 114;
+}
+.b3bottom{
+  height: 50vh;
+  background-image: url(Zorro\ Design_files/bottels.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: sticky !important;
+  top: 0;
+  z-index: 111;
+}
+.b4bottom{
+  height: 50vh;
+  background-image: url(Zorro\ Design_files/party.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: sticky !important;
+  top: 0;
+  z-index: 111;
+}
+.b5bottom{
+  height: 50vh;
+  background-image: url(olipop.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: sticky !important;
+  top: 0;
+  z-index: 111;
+}
+.b6bottom{
+  height: 60vh;
+  background-image: url(gemini1.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: sticky !important;
+  top: 0;
+  z-index: 111;
+}
+.box7{
+  height: 150vh;
+  width: 100%;
+  background-color: black;
+  z-index: 115;
+  padding-top: 60vmax;
+}
+.b7top{
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.b7top>h1{
+  font: 500 5vmax "poppins";   
+  color: white; 
+  margin-top: -15vmax;
+}
+.b7top>h2{
+  font: 500 4.8vmax "merienda";  
+  letter-spacing: -5px;
+  margin-left: 10px;
+  color: white;
+  margin-top: -15vmax; 
+}
+.b7bottom{
+  height: 60vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.images{
+ margin-left: 3vmax;
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+
+}
+.img1,.img2,.img3{
+  width: 96%;
+  height: 70vh;
+  background-color: rgb(51, 51, 51);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 10px;
+
+}
+.left1{
+  border-radius: 10px;
+  width: 96%;
+  height: 60vh;
+  background-image: url(Zorro\ Design_files/yuno.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10px;
+}
+.left2{
+  border-radius: 10px;
+  width: 96%;
+  height: 60vh;
+  background-image: url(Zorro\ Design_files/girl2.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10px;
+}
+.left3{
+  border-radius: 10px;
+  width: 96%;
+  height: 60vh;
+  background-image: url(Zorro\ Design_files/girl1.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10px;
+}
+.right1,.right2,.right3{
+  width: 100%;
+}
+.right1>h1{
+  font: 300 2.3vmax "roboto";
+  color: white;
+  line-height: 20px;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+.right2>h1,.right3>h1{
+  font: 300 2.3vmax "roboto";
+  color: white;
+  line-height: 20px;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+.right1>h2,.right2>h2,.right3>h2{
+  font: 500 1.8vmax "roboto";
+  color: white;
+  margin-top: 30px;
+  padding: 10px;
+}
+.right1>h3,.right2>h3,.right3>h3{
+  font: 500 1.5vmax "roboto";
+  color: rgb(163,163, 163);
+  padding: 10px;
+  margin-top: -10px;
+}
+.box8{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+}
+.box9{
+  width: 100%;
+  height: 80vh;
+  background-color: black;
+}
+.b9top{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.b9top>h1{
+  font: 500 5vmax "poppins";   
+  color: white; 
+  letter-spacing: -1px;
+}
+.b9top>h2{
+  font: 500 4.8vmax "merienda";  
+  letter-spacing: -1px;
+  margin-left: 10px;
+  color: white; 
+}
+.box9>h3{
+  font: 300 2vmax "roboto";   
+  color: white; 
+  text-align: center;
+  width: 60%;
+  height: 10vh;
+  margin: 1vmax 10vmax;
+  line-height: 20px;
+}
+.b9texttop{
+  width: 100%;
+  height: 20vh ;
+  display: flex;
+}
+.b9textbottom{
+  width: 100%;
+  height: 20vh ;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  margin-top: 8vmax;
+}
+.b9text1{
+  width: 50%;
+  height: inherit;
+  padding-left: 50px;
+  padding-right: 20px;
+  margin-right: 10px;
+
+}
+.b9text2{
+  width: 50%;
+  height: inherit;
+  padding-left: 50px;
+  padding-right: 5px;
+  margin-right: 10px;
+  
+}
+.b9text3,.b9text4{
+  width: 50%;
+  height: inherit;
+  padding-left: 50px;
+  padding-right: 5px;
+  margin-right: 30px;
+  margin-top: 25vmax;
+}
+.b9text1>h1,.b9text2>h1,.b9text3>h1,.b9text4>h1{
+  font: 500 6vmax "merienda";  
+  color: white;
+  margin: 6px 0;
+}
+.b9text1>h2,.b9text2>h2,.b9text3>h2,.b9text4>h2{
+  font: 400 2vmax "poppins";  
+  margin-top: -1vmax;
+  color: white;
+  margin-bottom: 5px;
+  line-height: 15px;
+}
+.b9text1>p,.b9text2>p,.b9text3>p,.b9text4>p{
+  font: 300 1.5vmax "roboto";  
+  color: white;
+ 
+}
+span{
+  font: 500 1.3vmax "roboto";  
+  color: white;  
+}
+.box10{
+  width: 100%;
+  height: 420vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+.b10left{
+  width: 40%;
+  height: 10vh;
+  
+}
+.b10top{
+  width: 60%;
+  height: inherit; 
+  margin-top: 5vmax;
+}
+.b10top>h1{
+  font: 500 5vmax "roboto";  
+  margin-left: 15vmax;
+  color: white;
+  line-height: 30px;
+  letter-spacing: -3px;
+  /* position: -webkit-sticky;
+  position: sticky;
+  top:10%; */
+
+}
+
+.b10right{
+  width: 100%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10vmax;
+}
+.b10one,.b10two,.b10three,.b10four,.b10five,.b10six{
+  width:90% ;
+  height: 60vh;
+  background-color: black;
+  border-radius: 25px;
+  border: .1px solid rgba(128, 128, 128, 0.3);
+  padding: 15px;
+  margin-bottom: 30px;
+}
+.b10one>h1,.b10two>h1,.b10three>h1,.b10four>h1,.b10five>h1,.b10six>h1{
+  font: 400 2.5vmax "roboto";   
+  color: white;
+  margin-top: 1vmax;
+  margin-left: 2vmax;
+}
+.b10one>h2,.b10two>h2,.b10three>h2,.b10four>h2,.b10five>h2,.b10six>h2{
+  font: 400 2vmax "roboto";   
+  color: gray;
+  margin-top: .2vmax;
+  margin-left: 2vmax;
+}
+.box11{
+  width: 100%;
+  height: 210vh;
+  background-color: black;
+}
+.b11a{
+  height: 140vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: .1px solid rgba(255, 255, 255, 0.231);
+  border-radius: 5%;
+  margin:0 6px;
+  padding: 30px;
+  
+}
+.b11top{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+.b11top>h1{
+  font: 500 3.8vmax "roboto";   
+  color: white; 
+}
+.b11top>h2{
+  font: 500 3.6vmax "merienda";  
+  letter-spacing: -4px;
+  margin-left: 10px;
+  color: white; 
+}
+.b11a>h2{
+  font: 500 2.3vmax "roboto";   
+  color: white; 
+  margin-top: 20px;
+}
+.btn1>button,.btn2>button,.btn3>button{
+ color: white;
+ background-color: black;
+ border: .1px solid white;
+ border-radius: 25px;
+ padding: 8px 24px;
+ cursor: pointer;
+ margin-left: 30px;
+ margin-top: 30px;
+ font-weight: 600;
+ font-size: 1.5vmax;
+}
+input{
+  margin-top: 30px;
+  background-color: black;
+  border: .1px solid white;
+  border-radius: 25px;
+  padding: 8px 50px;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+}
+.inp3{
+  margin-top: 30px;
+  background-color: black;
+  border: .1px solid white;
+  padding: 50px 40px;
+  color: white;
+  text-align: center;
+  font-weight: 900;
+}
+.b11a>button{
+  color: white;
+  background-color:rgb(65, 89, 224);
+  border-radius: 30px;
+  padding: 10px 30px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-top: 30px;
+  font-size: 2vmax;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+}
+.b11middle{
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.b11one,.b11two,.b11three{
+  width: 20%;
+  height: inherit;
+  margin: 0 40px;
+}
+.b11one>h1,.b11two>h1,.b11three>h1{
+font: 400 2vmax "roboto";
+color: white;
+margin-top: 13vmax;
+margin-bottom: 20px;
+}
+.b11one>h2,.b11two>h2,.b11three>h2{
+  font: 300 1.5vmax "roboto";
+  color: white;
+  margin-top: 10px;
+}
+.b11last{
+  margin-top: 3vh;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.b11last>h1{
+  font: 500 1vmax "roboto";   
+  color: gray; 
+  letter-spacing: 3px;
+}
+
+
+
+
+
+
+
+}
